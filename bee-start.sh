@@ -5,12 +5,6 @@
 ## c) 是否启用clef
 ## p) password
 
-apt update && apt install expect jq
-
-#set接受参数
-v_db="30000000"
-v_end="304ee59b22ca40eb86be1c051c8d79e2"
-v_clef="true"
 v_password="beebeebee"
 
 export TERM=vt100
