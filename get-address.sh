@@ -12,7 +12,7 @@ screen -x -S $add_name -p 0 -X stuff "$cmd_add"
 screen -x -S $add_name -p 0 -X stuff "\n"
 screen -x -S $add_name -p 0 -X stuff "exit"
 
-screen -S $add_name -X quit
+# screen -S $add_name -X quit
 
 sleep 5s
 
