@@ -4,7 +4,7 @@ export TERM=vt100
 
 echo "start get address from clef..."
 add_name=$"add"
-cmd_add=$"echo '{\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"account_list\"}' | nc -U /var/lib/bee-clef/clef.ipc"
+cmd_add=$"echo '{\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"account_list\"}' | nc -U /var/lib/bee-clef/clef.ipc > /root/address.json"
 
 
 screen -dmS $add_name
