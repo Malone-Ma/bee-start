@@ -8,7 +8,7 @@ cmd_add="echo '{\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"account_list\"}' | nc 
 
 /usr/bin/expect <<EOF
 spawn screen -S address
-send cmd_add
+send ${cmd_add}
 send "\x03"
 expect eof
 EOF
