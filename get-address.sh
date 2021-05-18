@@ -16,6 +16,8 @@ screen -x -S $add_name -p 0 -X stuff "exit"
 
 sleep 5s
 
+screen -S $add_name -X quit
+
 # /usr/bin/expect <<EOF
 # spawn screen -S ${add_name} ${cmd_add}
 # send "\x03"
