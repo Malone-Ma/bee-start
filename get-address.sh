@@ -10,7 +10,7 @@ cmd_add=$"echo '{\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"account_list\"}' | nc
 screen -dmS $add_name
 screen -x -S $add_name -p 0 -X stuff "$cmd_add"
 screen -x -S $add_name -p 0 -X stuff "\n"
-screen -x -S $add_name -p 0 -X stuff "\x03"
+screen -x -S $add_name -p 0 -X stuff "exit"
 
 # /usr/bin/expect <<EOF
 # spawn screen -S ${add_name} ${cmd_add}
