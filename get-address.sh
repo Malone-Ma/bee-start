@@ -28,4 +28,4 @@ cut -c 36-77 /root/address.json > /root/bee.address
 
 cat /root/bee.address
 
-sleep 20s
+sleep 5s
