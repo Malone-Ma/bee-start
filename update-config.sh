@@ -38,6 +38,8 @@ sed -i "s/v_clef/${v_clef}/g" /root/.beeconfig/bee-config-1.yaml
 
 echo -e "have changed config file... \n"
 
+screen -S bee -X quit
+
 screen_bee_name=$"bee"
 cmd_bee=$"bee start --config /root/.beeconfig/bee-config-1.yaml"
 
