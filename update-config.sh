@@ -49,7 +49,8 @@ expect {
 "*Password:" {  send "${v_password}\r";exp_continue }
 "*Confirm*" { send "${v_password}\r" }
 }
-send "\x01d"
+# send "\x01d"
+send "\x03"
 expect eof
 EOF
 
